@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- This is the opening tag for the HTML document, with the specified language attribute -->
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- The head section contains meta-information about the document -->
+<head>
+    <!-- This meta tag specifies the character encoding of the document as UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- This meta tag sets the rendering mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- This meta tag defines the viewport properties for responsive design -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.,minmum-scale=1">
+
+    <!-- The title element sets the title of the web page -->
+    <title>Ann's Creative Canvas</title>
+
+    <!-- This link tag includes an external stylesheet named "styles.css" -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<!-- The body section contains the visible content of the web page -->
+<body>
+    <!-- The element where the hello message will be displayed -->
+    <div id="hello-message"></div>
+    <h1> Interactive ASCII Art Generator</h1>
+    <h5 id="changing-text"><i>Drag the resolution bar at the bottom to adjust the pixel of the art</i></h5>
+    <img id="bird" src="img/silent-crow.png" alt="bird">
+    
+    
+    
+    <!-- The container div holds the canvas and controls -->
+    
+    <div class="container">
+        <!-- The canvas element with ID "canvas1" will be used for drawing -->
+        <canvas id="canvas1"></canvas>
+
+        <!-- The controls div contains user interface elements for the canvas -->
+        <div class='controls'>
+            <!-- The label for the resolution input element -->
+            <label for="resolution" id="resolutionLabel">resolution: 10</label>
+
+            <!-- The input element of type range with ID "resolution" -->
+            <!-- Users can slide the range between 1 and 20, with the default value of 5 -->
+            <input type="range" id="resolution" name="resolution" min="1" max="20" value="5">
+        </div>
+    </div>
+
+    <!-- This script tag includes an external JavaScript file named "script.js" -->
+    <script src="javascript/script.js"></script>
+    
+</body>
+
+
+</html>
+
+

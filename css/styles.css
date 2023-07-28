@@ -1,0 +1,97 @@
+/* Set the background color of the body to dark purple color with specific RBG HEX code */
+body {
+    background: #3B1491;
+}
+
+/* Styling for <h1> elements */
+h1 {
+	font-family: 'Raleway', sans-serif; /* Applying the 'Raleway' font to the text */
+	font-size: 30px; /* Setting the font size to 8rem */
+    margin:0; /* Remvoving margin*/
+	padding: 0; /* Removing padding */
+    color:  #ED974E; /*set the text color to antiquewhite*/
+    text-align: center;
+    line-height: 0.5;
+}
+/* Styling for <h5> elements */
+h5 {
+	font-family: 'Raleway', sans-serif; /* Applying the 'Raleway' font to the text */
+	font-size: 16px; /* Setting the font size to 8rem */
+    margin-top: 10px;
+	padding: 0; /* Removing padding */
+    color: antiquewhite; /*set the text color to antiquewhite*/
+    font-weight: 300; /*set the font weight to 200*/
+    text-align: center;/*align text to center*/
+}
+
+/* Styling for the #bird element */
+#bird {
+    width: 100px; /* Set the width of the bird element to 100 pixels */
+    height: 50px; /* Set the height of the bird element to 50 pixels */
+    margin-top: 50px; /* Add a top margin of 50 pixels to the bird element */
+    padding-top: 0; /* Remove any top padding from the bird element */
+    position: absolute; /* Set the positioning context to absolute for the bird element */
+    top: 0; /* Position the top edge of the bird element at the top of its containing element */
+    left: 0px; /* Position the left edge of the bird element at the left of its containing element */
+    animation-name: chasing; /* Apply the 'chasing' animation to the bird element */
+    animation-duration: 8s; /* Set the duration of the animation to 8 seconds */
+    animation-fill-mode: both; /* Set the animation to apply the styles both before and after the animation */
+    animation-iteration-count: infinite; /* Set the animation to repeat infinitely (loop animation) */
+}
+
+/* Keyframes for the 'chasing' animation */
+@keyframes chasing {
+    0% { transform: translateX(0px); } /* Starting keyframe: Move the bird from its initial position (left edge) to the right (translateX) by 0 pixels (no movement) */
+    50% { transform: translateX(1500px); } /* Middle keyframe: Move the bird to the right by 1500 pixels (chasing from left to right) */
+    55% { transform: scaleX(-1) translateX(-1500px); } /* Transition keyframe: Flip the bird horizontally (scaleX) and move it to the left by 1500 pixels (chasing back from right to left with horizontal flip to adjust the direction) */
+    100% { transform: scaleX(-1) translateX(100px); } /* Ending keyframe: Flip the bird horizontally and move it back to the right by 100 pixels (final position) */
+}
+  
+
+/* Style the container div */
+.container {
+    /* Position the container div 50% from the top and 50% from the left of its containing element */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    /* Set the width and height of the container to 600px */
+    width: 600px;
+    height: 600px;
+    /* Translate the container back by 50% of its own width and height to center it */
+    transform: translate(-50%, -50%);
+}
+
+/* Style the canvas element with ID "canvas1" */
+#canvas1 {
+    /* Add a white border around the canvas */
+    border: 3px solid white;
+    margin-top: 20px;
+}
+
+/* Style the controls div */
+.controls {
+    /* Position the controls div at the bottom with a distance of -60px from the bottom of its containing element */
+    position: absolute;
+    bottom: -60px;
+    /* Set the width of the controls div to 100% */
+    width: 100%;
+    /* Use flexbox to make the controls inside the div display in a row */
+    display: flex;
+}
+
+/* Style the input elements inside the controls div */
+.controls > input {
+    /* Set the width of the input elements to 75% of the available space inside the controls div */
+    width: 75%;
+}
+
+/* Style the label elements inside the controls div */
+.controls > label {
+    /* Set the width of the label elements to 30% of the available space inside the controls div */
+    width: 30%;
+    /* Set the text color to white */
+    color: white;
+    /* Set the font size of the labels to 20px */
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif; /* Applying the 'Raleway' font to the text */
+}
